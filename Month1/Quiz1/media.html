@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media</title>
+</head>
+<body>
+  <video src="./assests/video/video_message.mp4" controls width="400px" height="auto"></video>
+  <br>
+  <audio src="./assests/audio/message.aac" controls></audio>
+
+  <h4>Picture story</h4>
+  <!-- Using the picture element to tell a story -->
+   <picture>
+    <!-- For mobile responsive image -->
+    <source media="(max-width: 599px)" srcset="./assests/images/mobile.jpg" width="100%" height="auto">
+    <p>Life is a journey.</p>
+
+    <!-- For tablet responsive image -->
+    <source media="(min-width: 600px) and (max-width: 1023px)" srcset="./assests/images/tab.jpg" width="100%" height="auto">
+    <p>You must take one step at a time.</p>
+
+    <!-- For larger screen/laptop responsive image -->
+    <source media="(min-width: 1024px)" srcset="./assests/images/laptop.jpg" width="100%" height="auto">
+    <p>Having done all, You will Fly and soar new heights.</p>
+
+    <!-- Default/fallback image -->
+    <img src="./assests/images/laptop.jpg" alt="a a man flying" width="100%" height="auto">
+   </picture>
+</body>
+</html>
